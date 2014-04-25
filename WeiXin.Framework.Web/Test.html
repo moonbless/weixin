@@ -15,7 +15,7 @@
             background: #eee;
         }
 
-        #btn-submit {
+        .btn {
 
             width: 100px;
             height: 30px;
@@ -64,7 +64,7 @@
                             <li>
                                 <textarea id="weixin-msg" name="weixinMsg" rows="20" cols="100"></textarea></li>
                             <li>
-                                <input type="submit" id="btn-submit" value="提交" />
+                                <input type="submit" id="btn-submit" class="btn" value="提交" />
                             </li>
                         </ul>
                     </td>
@@ -92,6 +92,13 @@
             </table>
         </form>
     </div>
+    <form style="margin-left:20px;" method="get" action="WeiXinRequestHandler.ashx?signature=1111111&timestamp=1398407574&nonce=7788950215&echostr=xxxxxxxxxxx" target="_blank">
+        <p>微信加密签名<input type="text" id="=txtText" /></p>
+        <p>时间<input type="text" id="txtTime" /></p>
+        <p>随机数<input type="text" id="txtnonce" /></p>
+        <p>随机字条串<input type="text" id="txtstr" /></p>
+        <p><input type="submit" value="提交" class="btn" id="btn-getsubmit" /> </p>
+    </form>
     <script type="text/javascript">
         (function (dom) {
             String.prototype.trim = function () {

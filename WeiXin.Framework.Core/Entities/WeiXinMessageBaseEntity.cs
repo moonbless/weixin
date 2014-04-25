@@ -22,10 +22,10 @@ namespace WeiXin.Framework.Core.Entities
         {
             get
             {
-                if (string.IsNullOrEmpty(this._fromUserName))
-                {
-                    this._fromUserName = ConfigurationManager.ConnectionStrings["WeiXinAccoutName"].ConnectionString;
-                }
+                //if (string.IsNullOrEmpty(this._fromUserName))
+                //{
+                //    this._fromUserName = ConfigurationManager.ConnectionStrings["WeiXinAccoutName"].ConnectionString;
+                //}
                 return this._fromUserName;
             }
             set { this._fromUserName = value; }
